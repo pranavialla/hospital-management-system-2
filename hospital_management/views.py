@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 # Create your views here.
-def home(request):
-    return HttpResponse("hello world")
+def details_list(request):
+    return render(request,'hospital_management/details_list.html',{})
